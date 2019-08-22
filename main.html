@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Word Counter</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <div class="heading"><b>Word Counter</b></div>
+    <div class="counter">Count: <span id="count"></span></div>
+
+    <div class="timerClass">
+        <form>
+            <input id="timer" type="number" min="1" placeholder="Set timer in minutes"></input>
+            <button id="button" onclick="startTimer()">Start</button>
+        </form>
+
+        <div id="timeLeft" class="timeLeft">Time left: <span id="time"></span></div>
+    </div>
+
+    <textarea id="textarea" disabled></textarea>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
