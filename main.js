@@ -6,7 +6,7 @@ function startTimer() {
     if (timer > 0) {
         document.getElementById('button').disabled = true;
         document.getElementById('timer').disabled = true;
-        document.getElementById('textarea').disabled = false;
+        document.getElementById('reply').disabled = false;
         document.getElementById('timeLeft').style.display = "block";
     }
 
@@ -29,14 +29,9 @@ function startTimer() {
         }
     }, 1000);
 
-    if (document.getElementById("time").innerHTML === "EXPIRED") {
-        console.log("whyyyy")
-        document.getElementById('button').disabled = false;
-        document.getElementById('timer').disabled = false;
-    }
 }
 
-const input = document.querySelectorAll('textarea')[0];
+const input = document.getElementById('reply');
 input.addEventListener('keyup', () => {
     const words = input.value.match(/\b[-?(\w+)?]+\b/gi);
     if (words) {
